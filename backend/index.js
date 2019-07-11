@@ -20,7 +20,7 @@ app.get('/',(req,res)=>{
     res.send("api running...");
 });
 
-app.get('/api/chats',route);
+app.use('/api/chats',route);
 
 app.listen(port,()=>{
     console.log("Server started...");
